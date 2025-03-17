@@ -12,7 +12,7 @@ export default function Contact() {
     })
 
     return (
-        <section id="contact" className="relative py-20 bg-gradient-to-b from-gray-900 to-gray-800">
+        <section id="contact" className="relative py-16 sm:py-20 bg-gradient-to-b from-gray-900 to-gray-800">
             {/* Background Pattern */}
             <div className="absolute inset-0 opacity-5">
                 <div className="absolute inset-0 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] [background-size:16px_16px]"></div>
@@ -24,24 +24,24 @@ export default function Contact() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     transition={{ duration: 0.8 }}
-                    className="text-center mb-16"
+                    className="text-center mb-12 sm:mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
                         İletişime Geçin
                     </h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto">
+                    <p className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto">
                         Projeleriniz için bizimle iletişime geçebilirsiniz. En kısa sürede size dönüş yapacağız.
                     </p>
                 </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                         transition={{ duration: 0.8 }}
-                        className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-gray-700/50"
+                        className="bg-gray-800/50 backdrop-blur-sm p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-700/50"
                     >
-                        <h3 className="text-2xl font-semibold text-white mb-6">İletişim Bilgileri</h3>
+                        <h3 className="text-xl sm:text-2xl font-semibold text-white mb-6">İletişim Bilgileri</h3>
                         <div className="space-y-6">
                             <div className="flex items-start space-x-4">
                                 <div className="flex-shrink-0">
@@ -49,7 +49,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <p className="text-gray-400 text-sm">Email</p>
-                                    <a href={`mailto:${siteConfig.email}`} className="text-white hover:text-blue-400 transition-colors">
+                                    <a href={`mailto:${siteConfig.email}`} className="text-white hover:text-blue-400 transition-colors break-all">
                                         {siteConfig.email}
                                     </a>
                                 </div>
@@ -100,7 +100,7 @@ export default function Contact() {
                         initial={{ opacity: 0, x: 20 }}
                         animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
                         transition={{ duration: 0.8 }}
-                        className="space-y-6 bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl shadow-xl border border-gray-700/50"
+                        className="space-y-6 bg-gray-800/50 backdrop-blur-sm p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-700/50"
                     >
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-2">
@@ -113,7 +113,7 @@ export default function Contact() {
                                 <input
                                     type="text"
                                     id="name"
-                                    className="pl-12 block w-full h-14 rounded-lg bg-gray-900/50 border-gray-600 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-colors"
+                                    className="pl-10 block w-full h-12 sm:h-14 rounded-lg bg-gray-900/50 border-gray-600 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-colors"
                                     placeholder="Adınız Soyadınız"
                                 />
                             </div>
@@ -129,7 +129,7 @@ export default function Contact() {
                                 <input
                                     type="email"
                                     id="email"
-                                    className="pl-12 block w-full h-14 rounded-lg bg-gray-900/50 border-gray-600 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-colors"
+                                    className="pl-10 block w-full h-12 sm:h-14 rounded-lg bg-gray-900/50 border-gray-600 text-white shadow-sm focus:border-blue-500 focus:ring-blue-500 transition-colors"
                                     placeholder="ornek@email.com"
                                 />
                             </div>
@@ -147,7 +147,7 @@ export default function Contact() {
                         </div>
                         <button
                             type="submit"
-                            className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 transform hover:scale-[1.02]"
+                            className="w-full bg-blue-600 text-white px-6 py-3 sm:py-4 rounded-lg text-base sm:text-lg font-medium hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-900 transition-all duration-200 transform hover:scale-[1.02]"
                         >
                             Mesaj Gönder
                         </button>
