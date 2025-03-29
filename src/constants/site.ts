@@ -1,8 +1,8 @@
 export const siteConfig = {
-    name: "Imaj Software",
+    name: "Xabze Kaizen Technology",
     description: "Profesyonel hizmetler ve projeler",
-    creator: "Imaj Software",
-    email: "imajsoftware@gmail.com",
+    creator: "Xabze Kaizen Technology",
+    email: "xabzekaizen@gmail.com",
     phone: "+90 (539) 945 67 55",
     address: {
         street: "Atatürk Mahallesi, Yeni Kent Caddesi",
