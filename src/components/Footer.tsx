@@ -52,6 +52,11 @@ export default function Footer() {
                         </ul>
                     </div>
                 </div>
+                <div className="flex justify-center">
+                    <a href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
+                        Gizlilik Politikası
+                    </a>
+                </div>
                 <div className="mt-8 pt-8 border-t border-gray-800">
                     <p className="text-center text-gray-400">
                         © {new Date().getFullYear()} {siteConfig.name}. Tüm hakları saklıdır.
